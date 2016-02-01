@@ -1,0 +1,191 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow-y: hidden;
+  color: #171717;
+  font-family: sans-serif;
+  background-color: #efefef;
+}
+
+//======================================================//
+//                      Menu styles                     //
+//======================================================//
+nav {
+  display: block;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  
+  text-align: center;
+  
+  background-color: #fff;
+  border-top: 3px solid #09f;
+}
+
+nav:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -53px;
+  left: -30px;
+  width: 0; 
+  height: 0; 
+  z-index: 999;
+  
+  border-right: 1000px solid transparent;
+  border-left: 30px solid transparent; 
+  border-bottom: 50px solid #09f;
+}
+
+nav:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -33px;
+  right: -30px;  
+  width: 0; 
+  height: 0;
+  z-index: -1;
+  
+  border-right: 30px solid transparent;
+  border-left: 1000px solid transparent; 
+  border-bottom:30px solid #09f; 
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+.menu-item-active {
+  padding: 5px 20px;
+  border-top: 2px solid #09f;
+  border-bottom: 2px solid #09f;
+}
+
+nav ul li a {
+  display: block;
+  padding: 20px 20px;
+  
+  color: #171717;
+  font-size: 1.3em;
+  text-decoration: none;
+
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+nav ul li a:hover {
+  padding: 5px 20px;
+  border-top: 2px solid #09f;
+  border-bottom: 2px solid #09f;
+}
+
+//======================================================//
+//                      IGNORE THIS                     //
+//======================================================//
+.container {
+  display: block;
+  position: absolute;
+  top: 200%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 1em;
+  width: 70%;
+  height: 70%;
+  
+  background-color: #fff;
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-border-radius:4px;
+}
+
+.container:before,
+.container:after {
+        content:"";
+        position:absolute;
+        z-index:-2;
+        bottom:15px;
+        left:10px;
+        width:50%;
+        height:20%;
+        max-width:300px;
+    -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+       -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+            box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+    -webkit-transform:rotate(-3deg);
+       -moz-transform:rotate(-3deg);
+        -ms-transform:rotate(-3deg);
+         -o-transform:rotate(-3deg);
+            transform:rotate(-3deg);
+}
+  
+.container:after {
+    right:10px;
+    left:auto;
+    -webkit-transform:rotate(3deg);
+       -moz-transform:rotate(3deg);
+        -ms-transform:rotate(3deg);
+         -o-transform:rotate(3deg);
+            transform:rotate(3deg);
+}
+
+#home {
+  background: url("http://www.mrwallpaper.com/wallpapers/Nature-in-Autumn-1920x1080.jpg") center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#about {
+  background: url("http://blog.lenycom.com/wp-content/uploads/2009/07/hd-nature-wallpaper-5.jpg") center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#videos {
+  background: url("http://thesceneisdead.com/wp-content/uploads/2014/05/A-State-of-Trance-650-New-Horizons.jpg") center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#projects {
+  background: url("http://freetwitterheaders.net/wp-content/uploads/2012/12/Purple-Simple-Gradient.jpg") center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
